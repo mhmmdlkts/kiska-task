@@ -1,0 +1,57 @@
+.bottom-panel {
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    background-color: #161a23;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+
+    &.open {
+        animation-name: slideIn;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    &.closed {
+        animation-name: slideOut;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.content {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    overflow: auto;
+    max-height: 534px;
+}
+
+.listener {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+  
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+  

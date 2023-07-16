@@ -1,0 +1,42 @@
+.single-button {
+    background-color: #282b30;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.selected {
+  border: 2px solid #0c74c0;
+  border-radius: 10px;
+}
+
+.not-selected {
+  border: 2px solid #0c75c000;
+  border-radius: 10px;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.light-image {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.widget-text {
+  font-size: 16px;
+  color: #0c74c0;
+  text-align: right;
+  position: absolute;
+  right: 14px;
+}
+
+.arrow {
+  font-size: 30px;
+}
